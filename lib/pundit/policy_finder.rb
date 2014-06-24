@@ -36,6 +36,8 @@ module Pundit
         object.policy_class
       elsif object.class.respond_to?(:policy_class)
         object.class.policy_class
+      elsif object.is_a?(Symbol)
+        "#{object.to_s.camelize}Policy".constantize
       else
         klass = if object.respond_to?(:model_name)
           object.model_name
