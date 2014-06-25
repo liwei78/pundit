@@ -22,7 +22,8 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency "activemodel", "~> 3.0"
   gem.add_development_dependency "bundler", "~> 1.3"
   gem.add_development_dependency "rspec", "~>3.0"
-  gem.add_development_dependency "pry", "~> 0"
+  gem.add_development_dependency "pry", "~> 0.9.10"
+  gem.add_development_dependency "pry-debugger", "~> 0.2.2"
   gem.add_development_dependency "rake", "~> 0"
   gem.add_development_dependency "yard", "~> 0"
 end
